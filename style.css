@@ -1,0 +1,125 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(to right, rgb(3, 3, 207),rgb(14, 3, 85))
+}
+.notepad{
+margin-top: 20px;
+margin-left: 30px;
+margin-right: 30px;
+}
+
+.text-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.input-section{
+    position: relative;
+    height: 20vw;
+    width: 31vw;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+textarea{
+    height: 100%;
+    width: 100%;
+    resize: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.588);
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-right: 30px;
+    font-size: 1.3em;
+    color: white;
+    border-radius: 6px;
+    border: 2px solid rgba(199, 215, 249, 0.495);
+    box-shadow:0px 0px 10px rgb(251, 251, 245);
+}
+section .delete-icon{
+    cursor: pointer;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.delete-icon:hover{
+    background-color: rgb(191, 204, 215);
+}
+
+.fa-regular{
+    color: rgba(245, 8, 8, 0.936);
+}
+
+.create-btn{
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(208, 205, 205);
+
+}
+.create-btn:hover{
+    background-color: rgb(215, 213, 213);
+}
+
+.input-section .date{
+    position: relative;
+    top: -100%;
+    text-align: center;
+    font-size: .7em;
+    color: rgb(95, 95, 93);
+    
+    
+}
+
+@media(max-width:1100px){
+    .text-container{
+        display: flex;
+        
+        .input-section{
+            width: 40vw;
+            height: 70vh;
+            flex-grow: 1;
+        }
+    }
+}
+
+@media(max-width:750px){
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        .input-section{
+            width: 80vw;
+            height: 60vh;
+            flex-grow: 1;
+        }
+    }
+
+    section .save-icon{
+        right: 2px;
+    }
+
+    .input-section .date{
+        position: relative;
+        top: -100%;
+        text-align: center;
+        font-size: .7em;
+        color: rgb(155, 156, 157);
+        
+        
+    }
+}
+
+
